@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  background-color: #101010;
+  color: lime;
+  font-family: 'Nova Square', cursive;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-input {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.container-print {
+  margin: auto;
+}
+
+.input, .btn {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: #000;
+  border: 1px solid lime;
+  color: lime;
+}
+
+.input::-webkit-input-placeholder {
+  padding-left: 1rem;
+}
+
+.input:-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+.input::-ms-input-placeholder {
+  padding-left: 1rem;
+}
+
+.input::placeholder {
+  padding-left: 1rem;
+}
+
+.txt-input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.btn {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.btn::before {
+  content: '<- wpisz parametry';
+  position: absolute;
+  display: block;
+  bottom: 110%;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  color: red;
+}
+
+.hide-alert::before {
+  display: none;
+}
+
+.element {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  text-align: right;
+  text-shadow: 0 0 5px lime;
+}
+
+.figure {
+  margin: 1rem 0;
+  font-size: 5em;
+}
+/*# sourceMappingURL=style.css.map */
